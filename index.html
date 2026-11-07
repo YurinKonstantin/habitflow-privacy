@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="HabitFlow — офлайн-трекер привычек для Android: отмечайте выполнение, следите за сериями и получайте локальные напоминания. Без регистрации и аккаунтов.">
+<title>HabitFlow — трекер привычек для Android</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-soft: #f6f7f9;
+    --text: #1c1f24;
+    --muted: #5b6270;
+    --line: #e3e6eb;
+    --accent: #2f6fed;
+    --accent-soft: #eef3ff;
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 32px 20px 56px;
+  }
+  header.hero {
+    padding: 28px 0 22px;
+    border-bottom: 1px solid var(--line);
+  }
+  .badge {
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border-radius: 999px;
+    padding: 4px 12px;
+    margin-bottom: 14px;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin: 0 0 10px;
+    letter-spacing: -.01em;
+  }
+  .lead {
+    margin: 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+  section { padding: 26px 0; border-bottom: 1px solid var(--line); }
+  section:last-of-type { border-bottom: 0; }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0 0 14px;
+    letter-spacing: -.01em;
+  }
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  ul.features { list-style: none; margin: 0; padding: 0; }
+  ul.features li {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+  ul.features li:last-child { margin-bottom: 0; }
+  ul.features strong { display: block; margin-bottom: 2px; }
+  ul.features span { color: var(--muted); font-size: .96rem; }
+  .note {
+    background: var(--accent-soft);
+    border: 1px solid #d7e2ff;
+    border-radius: var(--radius);
+    padding: 16px;
+  }
+  .note p { color: var(--muted); }
+  .actions { padding-top: 26px; }
+  a.button {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 10px;
+  }
+  a.button:hover, a.button:focus { background: #2459c4; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid #b9ceff; outline-offset: 2px; }
+  footer {
+    margin-top: 34px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: .92rem;
+  }
+  footer p { margin: 0 0 6px; }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .wrap { padding: 22px 16px 44px; }
+    h1 { font-size: 1.6rem; }
+    h2 { font-size: 1.12rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <span class="badge">Android · RuStore</span>
+    <h1>HabitFlow — трекер привычек</h1>
+    <p class="lead">Помогает вырабатывать полезные привычки: отмечайте выполнение, следите за сериями и получайте напоминания. Приложение работает офлайн, без регистрации и аккаунтов.</p>
+  </header>
+
+  <section>
+    <h2>Что умеет</h2>
+    <ul class="features">
+      <li>
+        <strong>Список привычек</strong>
+        <span>Добавляйте свои привычки и группируйте их по смыслу — от зарядки до чтения.</span>
+      </li>
+      <li>
+        <strong>Ежедневные отметки</strong>
+        <span>Отмечайте выполнение в один тап и видьте, как растёт серия дней подряд.</span>
+      </li>
+      <li>
+        <strong>Прогресс и статистика</strong>
+        <span>Наглядная история выполнения помогает не терять мотивацию.</span>
+      </li>
+      <li>
+        <strong>Локальные напоминания</strong>
+        <span>Уведомления приходят с устройства в удобное время; разрешение можно отключить.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Данные остаются на устройстве</h2>
+    <p>Все привычки и отметки хранятся только в памяти вашего телефона (DataStore). Приложение не отправляет их на серверы, не требует учётной записи и не синхронизирует данные между устройствами.</p>
+  </section>
+
+  <section>
+    <h2>Реклама и покупка</h2>
+    <p>Приложение бесплатное. Рекламу показывает рекламный SDK VK Ads (myTarget) — для подбора объявлений он обращается к рекламному идентификатору и техническим данным устройства. Рекламные данные обрабатываются на стороне рекламной сети.</p>
+    <div class="note">
+      <p>Встроенная покупка «Отключить рекламу» проводится через RuStore Pay. Платёж обрабатывает RuStore: реквизиты банковской карты в приложение не передаются и не хранятся.</p>
+    </div>
+  </section>
+
+  <section class="actions">
+    <h2>Документы</h2>
+    <p>Как именно обрабатываются данные, что получают рекламная сеть и магазин, и как удалить свои сведения — в политике конфиденциальности.</p>
+    <p><a class="button" href="privacy.html">Политика конфиденциальности</a></p>
+  </section>
+
+  <footer>
+    <p>Разработчик: Юрин Константин. Приложение HabitFlow, пакет com.yurinko.habitflow.</p>
+    <p>Связь: <a href="mailto:yurinkonstantin@ya.ru">yurinkonstantin@ya.ru</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
